@@ -21,7 +21,7 @@ jobs:
       id: extract_branch
     - name: NextGen Static Analysis
       run: |
-        ${GITHUB_WORKSPACE}/sl analyze --app Qwiet-ruby-GH .
+        ${GITHUB_WORKSPACE}/sl analyze --app Qwiet-ruby-GH --ruby .
       env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKENQ }}
         SHIFTLEFT_API_HOST: www.shiftleft.io
